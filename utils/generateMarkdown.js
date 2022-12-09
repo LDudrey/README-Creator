@@ -4,17 +4,13 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
-      let mit = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-      break;
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
     case "APACHE 2.0":
-      let apache = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-      break;
+      return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
     case "GPL 3.0":
-      let gpl = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-      break;
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     case "BSD 3":
-      let bsd = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
-      break;
+      return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
     case "None":
       let none = " ";
       break;
@@ -34,11 +30,10 @@ function generateMarkdown(answers) {
     
   ## License
   
-  [![License](renderLicenseBadge)](renderLicenseLink)
-  ${license}
+   ${renderLicenseBadge(answers.license)}
   
   ## Description
-  ${data.description}
+  ${answers.description}
   
   ## Table of Contents
   
@@ -51,23 +46,23 @@ function generateMarkdown(answers) {
   
   ## Installation
   
-  ${data.install}
+  ${answers.install}
   
   ## Usage
   
-  ${data.usage}
+  ${answers.usage}
   
   ## How to Contribute
   
-  ${data.contribute}
+  ${answers.contribute}
   
   ## Tests
   
-  ${data.tests}
+  ${answers.tests}
   
   ## Questions
   
-  Any questions please contact me at: ${data.email}. More examples of my work is available at ${data.name}.`
+  Any questions please contact me at: ${answers.email}. More examples of my work is available at ${answers.name}.`
 }
 
 module.exports = generateMarkdown;

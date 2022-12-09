@@ -65,8 +65,9 @@ err ? console.log(err) : console.log('Success!'))
 }
 // TODO: Create a function to initialize app
 function init() {
-    const answers = inquirer.prompt(questions);
-}
+   inquirer.prompt(questions).then((answers) => 
+   writeToFile(answers));
+} 
 
 // Function call to initialize app
  init();

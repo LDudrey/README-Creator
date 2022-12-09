@@ -1,11 +1,10 @@
-// TODO: Include packages needed for this application
 // http://fredkschott.com/post/2014/06/require-and-the-module-system/
 // https://www.stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generate = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// Array of questions for the user
 const questions = [
         {
             name: 'name',
@@ -55,19 +54,20 @@ const questions = [
         },
     ];
 
-// TODO: Create a function to write README file
+// Function writes the README file
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
 // https://stackoverflow.com/questions/63433310/how-to-wait-inquirer-answer-to-be-processed-by-fs-writefile-before-continuing
 function writeToFile(answers) {
     const readMeContent = generate(answers);
 fs.writeFile('README.md', readMeContent, (err) =>
 err ? console.log(err) : console.log('Success!'))
-}
-// TODO: Create a function to initialize app
+};
+
+// Function initializes app
 function init() {
    inquirer.prompt(questions).then((answers) => 
    writeToFile(answers));
-} 
+};
 
 // Function call to initialize app
  init();

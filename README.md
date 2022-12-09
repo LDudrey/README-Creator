@@ -1,11 +1,11 @@
-# jfdkla
+# Readme gen
     
   ## License
   
    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
-  jfdkla
+  
   
   ## Table of Contents
   
@@ -18,20 +18,20 @@
   
   ## Installation
   
-  hfdla
+  npm
   
   ## Usage
   
-  hfda
+  ndla
   
   ## How to Contribute
   
-  hfalk
+  nfdkla
   
   ## Tests
   
-  fhkda
+  npm
   
   ## Questions
   
-  Any questions please contact me at: fjdkla. More examples of my work is available at Lydia.
+  Any questions please contact me at: lydia@mgail.com. More examples of my work is available at [LDudrey](https://github.com/LDudrey).

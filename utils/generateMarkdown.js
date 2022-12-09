@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function returns a license badge based on which license is passed in
 // License badges https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 function renderLicenseBadge(license) {
   switch (license) {
@@ -12,12 +11,11 @@ function renderLicenseBadge(license) {
     case "BSD 3":
       return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
     case "None":
-      let none = " ";
-      break;
+      return " ";
   }
 };
 
-// TODO: Create a function to generate markdown for README
+// Function generates markdown for README
 function generateMarkdown(answers) {
   return `# ${answers.title}
     
@@ -55,7 +53,7 @@ function generateMarkdown(answers) {
   
   ## Questions
   
-  Any questions please contact me at: ${answers.email}. More examples of my work is available at ${answers.name}.`
+  Any questions please contact me at: ${answers.email}. More examples of my work is available at [${answers.name}](https://github.com/${answers.name}).`
 }
 
 module.exports = generateMarkdown;

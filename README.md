@@ -1,11 +1,11 @@
-# Readme gen
+# jflda
     
   ## License
   
-   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
   ## Description
-  
+  fjdka
   
   ## Table of Contents
   
@@ -18,20 +18,20 @@
   
   ## Installation
   
-  npm
+  fjkda
   
   ## Usage
   
-  ndla
+  fdkjla
   
   ## How to Contribute
   
-  nfdkla
+  fjakl
   
   ## Tests
   
-  npm
+  fdjka
   
   ## Questions
   
-  Any questions please contact me at: lydia@mgail.com. More examples of my work is available at [LDudrey](https://github.com/LDudrey).
+  Any questions please contact me at: fjdla. More examples of my work is available at [GitHub](https://github.com/Ldudrey).

@@ -1,9 +1,10 @@
 // Function returns a license badge based on which license is passed in
 // License badges https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+// Week 9 activity 16 Switch case
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)";
     case "APACHE 2.0":
       return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
     case "GPL 3.0":
@@ -19,10 +20,6 @@ function renderLicenseBadge(license) {
 function generateMarkdown(answers) {
   return `# ${answers.title}
     
-  ## License
-  
-   ${renderLicenseBadge(answers.license)}
-  
   ## Description
   ${answers.description}
   
@@ -50,11 +47,15 @@ function generateMarkdown(answers) {
   ## Tests
   
   ${answers.tests}
+
+  ## License
   
+  ${renderLicenseBadge(answers.license)}
+   
   ## Questions
   
-  Any questions please contact me at: ${answers.email}. More examples of my work is available at [${answers.name}](https://github.com/${answers.name}).`
-}
+  Any questions please contact me at: ${answers.email}. More examples of my work is available at [GitHub](https://github.com/${answers.name}).`
+};
 
 module.exports = generateMarkdown;
 

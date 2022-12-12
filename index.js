@@ -3,7 +3,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generate = require('./utils/generateMarkdown');
-let answersObject = {};
+
 // Array of questions for the user
 const questions = [
     {
@@ -53,22 +53,6 @@ const questions = [
         message: 'What does the user need to know about contributing to the repo?',
     },
 ];
-function creditQuestion() {
-    inquirer
-        .prompt([
-            {
-                name: 'credits',
-                type: 'list',
-                message: 'Would like to add links to used tutorials?',
-                choices: ['Yes', 'No'],
-            },
-
-        ]).then((answers) => {
-            answersObject.credit = answers.credits
-            console.log(answersObject)
-        }
-        )
-};
 
 
 // Function writes the README file
@@ -82,11 +66,8 @@ function writeToFile(answers) {
 
 // Function initializes app
 function init() {
-    //    inquirer.prompt(questions).then((answers) => 
-    //    writeToFile(answers));
-    inquirer.prompt(questions).then((answers) => {
-        answersObject.name = answers.name
-    }).then(creditQuestion)
+       inquirer.prompt(questions).then((answers) => 
+       writeToFile(answers));
 };
 
 // Function call to initialize app

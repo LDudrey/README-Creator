@@ -23,6 +23,10 @@ function generateMarkdown(answers) {
     
   ## Description
   ${answers.description}
+
+  ## License
+  
+  ${renderLicenseBadge(answers.license)}
   
   ## Table of Contents
   
@@ -48,10 +52,6 @@ function generateMarkdown(answers) {
   ## Contributing
   
   ${answers.contribute}
-  
-  ## License
-  
-  ${renderLicenseBadge(answers.license)}
    
   ## Questions
   

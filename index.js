@@ -56,8 +56,7 @@ const questions = [
 
 
 // Function writes the README file
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
-// https://stackoverflow.com/questions/63433310/how-to-wait-inquirer-answer-to-be-processed-by-fs-writefile-before-continuing
+// TA assistance with the writeToFile and init functions
 function writeToFile(answers) {
     const readMeContent = generate(answers);
     fs.writeFile('README.md', readMeContent, (err) =>

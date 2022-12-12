@@ -1,37 +1,38 @@
-# jflda
+# Readme Generator
     
-  ## License
-  
-   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  
   ## Description
-  fjdka
+  It generates readme's
   
   ## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contributing)
+  - [Contributing](#how to contribute)
   - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
   
-  fjkda
+  npm i inquirer@8.2.4
   
   ## Usage
   
-  fdkjla
+  I don't know
+
+  ## Tests
+  
+  npm
   
   ## How to Contribute
   
-  fjakl
+  No contribution
   
-  ## Tests
+  ## License
   
-  fdjka
-  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+   
   ## Questions
   
-  Any questions please contact me at: fjdla. More examples of my work is available at [GitHub](https://github.com/Ldudrey).
+  Any questions please contact me at: ladudrey@gmail.com. 
+  More examples of my work is available at [GitHub](https://github.com/LDudrey).

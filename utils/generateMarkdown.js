@@ -39,22 +39,23 @@ function generateMarkdown(answers) {
   ## Usage
   
   ${answers.usage}
+
+  ## Tests
+  
+  ${answers.tests}
   
   ## How to Contribute
   
   ${answers.contribute}
   
-  ## Tests
-  
-  ${answers.tests}
-
   ## License
   
   ${renderLicenseBadge(answers.license)}
    
   ## Questions
   
-  Any questions please contact me at: ${answers.email}. More examples of my work is available at [GitHub](https://github.com/${answers.name}).`
+  Any questions please contact me at: ${answers.email}. 
+  More examples of my work is available at [GitHub](https://github.com/${answers.name}).`
 };
 
 module.exports = generateMarkdown;

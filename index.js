@@ -27,15 +27,14 @@ const questions = [
         message: 'Write a short description about your project.',
     },
     {
-        name: 'license',
-        type: 'list',
-        message: 'What license should this project have?',
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
-    },
-    {
         name: 'install',
         type: 'input',
-        message: 'What command should be run to install dependencies?',
+        message: 'What command should be run to install?',
+    },
+    {
+        name: 'usage',
+        type: 'input',
+        message: 'How does the user use this repo?',
     },
     {
         name: 'tests',
@@ -43,14 +42,15 @@ const questions = [
         message: 'What command should be used to run tests?',
     },
     {
-        name: 'usage',
-        type: 'input',
-        message: 'What does the user need to know about using this repo?',
-    },
-    {
         name: 'contribute',
         type: 'input',
-        message: 'What does the user need to know about contributing to the repo?',
+        message: 'How can the user contribute to the repo?',
+    },
+    {
+        name: 'license',
+        type: 'list',
+        message: 'What license should this project have?',
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
     },
 ];
 

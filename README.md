@@ -1,32 +1,32 @@
-# Readme Generator
+# Readme generator
     
   ## Description
-  It generates readme's
+  it generates readmes
   
   ## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#how to contribute)
+  - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
   
   ## Installation
   
-  npm i inquirer@8.2.4
+  `npm i inquirer@8.2.4`
   
   ## Usage
   
-  I don't know
+  copy then run node index
 
   ## Tests
   
-  npm
+  `node index`
   
-  ## How to Contribute
+  ## Contributing
   
-  No contribution
+  no contribution
   
   ## License
   

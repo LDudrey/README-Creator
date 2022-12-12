@@ -18,8 +18,7 @@
   
   ## Installation
   
-  Clone this repo to your repository.
-  Install npm packages and inquirer v. 8.2.4.
+  Clone this repo to your repository. In order to run this application in your personal workspace you will need to have Node.js installed and also install npm packages and inquirer v. 8.2.4.
 
   `npm install`
   `npm i inquirer@8.2.4`

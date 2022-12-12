@@ -34,7 +34,7 @@ function generateMarkdown(answers) {
   
   ## Installation
   
-  \`${answers.install}\`
+  \```${answers.install}\```
   
   ## Usage
   
@@ -42,7 +42,7 @@ function generateMarkdown(answers) {
 
   ## Tests
   
-  \`${answers.tests}\`
+  \```${answers.tests}\```
   
   ## Contributing
   

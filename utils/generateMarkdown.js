@@ -17,6 +17,7 @@ function renderLicenseBadge(license) {
 };
 
 // Function generates markdown for README
+// https://stackoverflow.com/questions/35803959/template-literals-with-nested-backticks-in-es6
 function generateMarkdown(answers) {
   return `# ${answers.title}
     
@@ -55,7 +56,7 @@ function generateMarkdown(answers) {
   ## Questions
   
   Any questions please contact me at: ${answers.email}. 
-  More examples of my work is available at [GitHub](https://github.com/${answers.name}).`
+  More examples of my work are available at [GitHub](https://github.com/${answers.name}).`
 };
 
 module.exports = generateMarkdown;
